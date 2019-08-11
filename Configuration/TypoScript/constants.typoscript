@@ -1,0 +1,57 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:frankreich/Configuration/TypoScript/Constants" extensions="typoscript">
+
+
+############
+### PAGE ###
+############
+page {
+    logo {
+        file = EXT:starterkit/Resources/Public/Images/logo.svg
+        fileInverted = EXT:starterkit/Resources/Public/Images/logo-inverted.svg
+        height = 52
+        width = 192
+        alt = Starterkit
+        linktitle = Starterkit
+    }
+    favicon {
+        file = EXT:starterkit/Resources/Public/Icons/favicon.ico
+    }
+    fluidtemplate {
+        layoutRootPath = EXT:starterkit/Resources/Private/Layouts/Page/
+        partialRootPath = EXT:starterkit/Resources/Private/Partials/Page/
+        templateRootPath = EXT:starterkit/Resources/Private/Templates/Page/
+    }
+}
+
+
+##################
+### EXTENSIONS ###
+##################
+plugin.starterkit {
+    view {
+        layoutRootPath = EXT:starterkit/Resources/Private/Layouts/
+        partialRootPath = EXT:starterkit/Resources/Private/Partials/
+        templateRootPath = EXT:starterkit/Resources/Private/Templates/
+    }
+}
+
+
+########################
+### CONTENT ELEMENTS ###
+########################
+plugin.starterkit_contentelements {
+    view {
+        layoutRootPath = EXT:starterkit/Resources/Private/Layouts/ContentElements/
+        partialRootPath = EXT:starterkit/Resources/Private/Partials/ContentElements/
+        templateRootPath = EXT:starterkit/Resources/Private/Templates/ContentElements/
+    }
+}
+
+
+################################
+### BOOTSTRAP SCSS CONSTANTS ###
+################################
+plugin.starterkit.settings.scss {
+    primary = #eb3e4a
+    secondary = #013859
+}
